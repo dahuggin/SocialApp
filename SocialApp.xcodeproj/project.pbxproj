@@ -23,6 +23,7 @@
 		45E3D9721EAECD3000D7DC15 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3D9711EAECD3000D7DC15 /* CircleView.swift */; };
 		45E3D9741EAEED8900D7DC15 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3D9731EAEED8900D7DC15 /* PostCell.swift */; };
 		45E3D9771EB01ACA00D7DC15 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3D9761EB01ACA00D7DC15 /* DataService.swift */; };
+		45E3D9791EB180C800D7DC15 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3D9781EB180C800D7DC15 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		45E3D9711EAECD3000D7DC15 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		45E3D9731EAEED8900D7DC15 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		45E3D9761EB01ACA00D7DC15 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		45E3D9781EB180C800D7DC15 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B5A532D197E70534EFF3AB92 /* Pods_SocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEA3CFCC52E5E9B85354359 /* Pods-SocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 		4520D8F71E9EF3A8000AD7E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45E3D9781EB180C800D7DC15 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				45E3D9721EAECD3000D7DC15 /* CircleView.swift in Sources */,
 				452E623A1EA406580040B8D4 /* FancyField.swift in Sources */,
 				452EF4671E9EF07A0081849F /* SignInVC.swift in Sources */,
+				45E3D9791EB180C800D7DC15 /* Post.swift in Sources */,
 				452E62381EA405230040B8D4 /* RoundBtn.swift in Sources */,
 				452E623C1EA409C00040B8D4 /* FancyButton.swift in Sources */,
 				45E3D9771EB01ACA00D7DC15 /* DataService.swift in Sources */,

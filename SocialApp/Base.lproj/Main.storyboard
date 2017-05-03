@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -182,13 +182,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VtG-ZQ-ptd">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="szb-5f-Pyn" customClass="CircleView" customModule="SocialApp" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="szb-5f-Pyn" customClass="CircleView" customModule="SocialApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="c6f-sF-mOv"/>
                                                     <constraint firstAttribute="height" constant="49" id="dBy-Np-TOr"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="KrH-jp-8eF" appends="YES" id="mmK-hY-hQK"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Biw-vi-aP1" customClass="FancyField" customModule="SocialApp" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="0.0" width="209" height="49"/>
@@ -338,6 +342,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="szb-5f-Pyn" id="J4M-GO-y8p"/>
                         <outlet property="tableView" destination="Lls-K9-oEb" id="GWV-Zk-cFT"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="GLv-Yt-2Tl"/>
                     </connections>
@@ -346,6 +351,11 @@
                 <tapGestureRecognizer id="5MQ-K9-Vrt">
                     <connections>
                         <action selector="signOutTapped:" destination="DA3-LP-JBR" id="XaR-6b-cqQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KrH-jp-8eF">
+                    <connections>
+                        <action selector="addImageTapped:" destination="DA3-LP-JBR" id="UN4-bt-wSf"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
